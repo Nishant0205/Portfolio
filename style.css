@@ -1,0 +1,616 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ab, hr
+{
+    border-style: none;
+    border-top-style: dotted;
+    border-color: grey;
+    border-width: 8px;
+    width:10%;
+    position: absolute;
+    left: 700px;
+}
+
+/*                  HOME                              */
+.bgimage {
+    height: 100vh;
+    background: url('r.jpg');
+    background-size: cover;
+    position: static;
+    
+}
+.navigation
+{
+    background-color: black;
+    border-radius: 30px;
+    position: fixed;
+    right: 5px;
+    margin: 20px;
+}
+.contact
+{
+    position: absolute;
+    margin: 2px;
+    left: 20px;
+    border-radius: 30px;
+}
+.contact li
+{
+    color: rgb(242, 242, 165);
+    border-radius: 50%;
+    padding: 10px;
+    list-style: none;
+    margin: 13px 0px;
+    font-size: 120px;
+    font-family: 'Italianno', cursive;
+    text-shadow: #000;
+}
+
+.navigation ul
+{
+    overflow: auto;
+    
+}
+.navigation li
+{
+    float: left;
+    list-style: none;
+    margin: 5px 20px;
+
+    padding: top;
+}
+.navigation li a
+{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+.navigation li a:hover
+{
+    color: red;
+}
+.intro
+{
+    position: absolute;
+    left: 44%;
+    top: 35%;
+    font-size: 4.5rem;
+    color: rgb(251, 239, 239);
+}
+
+.intro li{
+    list-style: none;
+    font-size: 1.1rem;
+    text-align: center;
+    color: pink;
+}
+.hide
+{
+    display: none;
+    position: absolute;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Oswald', sans-serif;
+    left: 50%;
+    top: 50%;
+    font-size: 2.5rem;
+    color: yellow;
+    list-style: disc;
+}
+
+.hide h1{
+    color: red;
+}
+
+.intro:hover + .hide
+{
+    display: block;
+   /* color: orange;*/
+
+}
+
+/*                  ABOUT                              */
+
+.about
+{
+    width: 100%;
+    padding: 10px 8%;
+    padding-top: 0px;
+    background-color: #FCC8D1;
+}
+
+.about .about_contents
+{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-gap: 70px;
+    color: red;
+    background-color: darksalmon;
+    padding: 30px;
+}
+
+.about .imagesection
+{
+    position: relative;
+    min-width: 300px;
+    height: 380px;
+}
+
+.imagesection img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+.about .imagesection::after
+{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    outline: 3px solid #787cb5;
+    top: 15px;
+    left: 15px;;
+    z-index: 1;
+}
+
+.infosection h1
+{
+    color: #dedce1;
+    font-size: 30px;
+    font-family: helvetica;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.infosection h1::before
+{
+    content = '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 110%;
+    left: 0;
+    background-color: #aaabb0;
+}
+
+.infosection h1::after
+{
+    content = '';
+    position: absolute;
+    width: 40%;
+    height: 3px;
+    top: calc(110% 1px);
+    left: 0px;
+    background-color: #787cb5;
+}
+
+.infosection h2
+{
+    font-family: helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    color: #787cb5;
+    padding: 14px 0px 15px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.infosection p
+{
+    color: black;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: justify;
+    padding-bottom: 8px;
+    margin-top: 20px;
+}
+
+.personalinfo
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 20px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #555;
+    font-size: 18px;
+}
+
+.personalinfo div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.personalinfo div span
+{
+    color: black;
+    letter-spacing: 1px;
+}
+
+.infosection button
+{
+    min-width: 150px;
+    padding: 8px 18px;
+    border: 1px solid #787cb5;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: skyblue;
+    color: #aaabb0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 20px;
+}
+
+.infosection button:hover
+{
+    color: #787cb5;
+    border-color: black;
+    border-block-start-width: 2px ;
+}
+
+.links li
+{
+    list-style: none;   
+    float: left;
+    margin: 5px 7% 0px 100px;
+
+    font-family: helvetica;
+    font-size: 20px;
+    font-weight: 600;
+    color: #787cb5;
+    padding: 5px 0px 0px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    
+}
+
+.links ul
+{
+    overflow: auto;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.links img
+{
+    background-color: rgb(255, 160, 150);
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+/*                  HOBBIES                              */
+
+.hobbies
+{
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 8%;
+    padding-top: 25px;
+    margin-top: 0px;
+    background-color: #FCC8D1;   
+}
+
+
+
+
+.hobbies li
+{
+    
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 1px 2px;
+}   
+
+.hcontent img{
+    position: relative;
+    min-width: 150px;
+    height: 150px;
+}
+
+.hobbies h1
+{
+    color: red;
+    font-size: 120px;
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    position: relative;
+    padding: 10px;
+    border-radius: 50px;
+    left: 20px;
+    top: 50px;
+    background-color: skyblue;
+    border-style: dotted;
+}
+
+.hobypic img
+{
+    position: absolute;
+    min-width: 350px;
+    height: 350px;
+    margin-top: 100px;
+    margin-left: 100px;
+    /*background-color: darksalmon;
+    border-radius: 10%;
+    padding: 10px;*/
+}
+
+.hcontent ul{
+    text-align: center;
+}
+.hobbies .ima1      
+{
+    color: deepskyblue;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    left: 700px;
+    top: -20px;
+}
+
+.hobbies .ima2
+{
+    color: deeppink;
+    position: relative;
+    display: inline-block;
+    left: 800px;
+    top: 50px;
+}
+
+/*                  CONTACT                              */
+
+.contactl
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    background-color: #FCC8D1;
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    top: 10px;
+}
+
+.contactl-text h2
+{
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+    color: black;
+}
+
+.contactl-text h2 span{
+    color: #0ef;
+}
+
+.contactl-text h4{
+    margin: 15px 0;
+    color: rgb(112, 92, 92);
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.contactl-text p{
+    color: rgb(27, 27, 103);
+    font-size: 25px;
+    line-height: 30px;
+
+    font-family: 'Young Serif', serif;
+
+
+   /* margin-bottom: 2rem;*/ 
+}
+
+.contactl-list
+{
+    margin-bottom: 3rem;
+}
+
+.contactl-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contactl-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contactl-list i{
+    display: inline-block;
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contactl-list li a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: #0ef;
+}
+
+.contactl-icons i{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.contactl-icons i:hover{
+    background: #0ef;
+    color: #000;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.contactl-form form{
+    position: relative;
+}
+
+.contactl-form form input, form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: #555557;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contactl-form textarea{
+    resize: none;
+    height: 220px;
+}
+
+.contactl-form form .send{
+    display: inline-block;
+    padding: 14px 60px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 5px #0ef, 
+    0 0 25px #0ef;
+}
+
+.contactl-form form .send:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+
+/*                  EDU & SKILLS                              */
+
+.sbody
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FCC8D1;  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scontainer
+{
+    width: 100%;
+    padding: 20px 10%;
+    background-color: darksalmon;
+    border-style: dotted;
+}
+
+.scontainer{
+    padding-right: calc(10% - 30px);
+}
+main.srow
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+.scol header.stitle
+{
+    font-family: helvetica;
+    color: #11a372;
+    padding: 0px 0px 20px 30px;
+}
+
+.scol .scontent{
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+}
+
+.scol .scontent .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+
+.scol .scontent .box:hover{
+    box-shadow: 0px 3px  12px 0px #ccc;
+    border: 1px solid transparent;
+}
+
+.scol .scontent .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #11a372;
+    border: 2px solid #FCC8D1;
+}
+
+.box h4{
+    position: relative;
+    color: #11a372;
+}
+
+.box h3{
+    font-size: 17px;
+    padding: 10px 0px 6px;
+    font-family: helvetica;
+    color: #444;
+}
+
+.box p{
+    line-height: 1.2;
+    color: #666;
+    font-size: 15px;
+}
+
+@media(max-width: 768px)
+{
+    main.srow{
+        grid-template-columns: 1fr;
+    }
+    .srow .sol:nth-child(2){
+        margin-top: 30px;
+    }
+}
+
+.bgc{
+    width: 100%;
+    padding: 50px 8%;
+    background-color: #FCC8D1; 
+}
